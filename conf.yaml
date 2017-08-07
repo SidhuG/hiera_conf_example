@@ -1,7 +1,7 @@
 ---
 kv_endpoint: https://<consul_endpoint>:<port>/kv/awesome_app/web
 application_name: awesome_app
-FQDN_CONSTRUCT: "{{.datacenter}}.{{.role}}.{{version}}.{{.application_name}}.{{.pools}}.{{.subdomain}}"
+FQDN_CONSTRUCT: "{{.datacenter}}.{{.role}}.{{.version}}.{{.application_name}}.{{.pools}}.{{.subdomain}}"
 Valid_Values:
   - role:
       - web
